@@ -3,7 +3,7 @@
 }
 
 body {
-  background: pink;
+  background: #17002f;
   padding: 0;
   margin: 0;
   overflow: hidden;
@@ -12,11 +12,11 @@ body {
 .game-container {
   position: relative; 
   width: 704px;
-  height: 396px;
+  height: 502px;
   margin: 0 auto;
   outline: 1px solid #fff;
 
-  transform: scale(2) translateY(50%);
+  transform: scale(1.2) translateY(20%);
 }
 
 .game-container canvas {
