@@ -10,45 +10,49 @@ class OverworldMap {
   }
 
   drawLowerImage(ctx) {
-    ctx.drawImage(this.lowerImage, 0, 0);
+    ctx.drawImage(this.lowerImage, 0, 0)
   }
 
   drawUpperImage(ctx) {
-    ctx.drawImage(this.upperImage, 0, 0);
-  }
+    ctx.drawImage(this.upperImage, 0, 0)
+  } 
 }
 
 window.OverworldMaps = {
-  Cherry: {
+  DemoRoom: {
     lowerSrc: "/images/maps/cherry.png",
     upperSrc: "",
     gameObjects: {
       hero: new Cat({
         isPlayerControlled: true,
         x: utils.withGrid(4),
-        y: utils.withGrid(12.5),
+        y: utils.withGrid(12),
       }),
-      lishou: new Cat({
+      npc1: new Cat({
         x: utils.withGrid(15),
-        y: utils.withGrid(12.5),
-        src: "/images/characters/people/lishou.png",
-      }),
-    },
+        y: utils.withGrid(12),
+        src: "/images/characters/people/lishou.png"
+      })
+    }
   },
   Kitchen: {
     lowerSrc: "/images/maps/KitchenLower.png",
     upperSrc: "/images/maps/KitchenUpper.png",
     gameObjects: {
-      npc1: new Cat({
-        x: 8,
-        y: 12.5,
-        src: "/images/characters/people/npc1.png",
+      hero: new GameObject({
+        x: 3,
+        y: 5,
       }),
-      npc2: new Cat({
-        x: 1,
-        y: 12.5,
-        src: "/images/characters/people/npc2.png",
+      npcA: new GameObject({
+        x: 9,
+        y: 6,
+        src: "/images/characters/people/npc2.png"
       }),
-    },
+      npcB: new GameObject({
+        x: 10,
+        y: 8,
+        src: "/images/characters/people/npc3.png"
+      })
+    }
   },
-};
+}
