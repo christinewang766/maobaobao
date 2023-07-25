@@ -23,13 +23,14 @@ window.OverworldMaps = {
     lowerSrc: "/images/maps/cherry.png",
     upperSrc: "",
     gameObjects: {
-      hero: new GameObject({
-        x: 4,
-        y: 12.5,
+      hero: new Cat({
+        isPlayerControlled: true,
+        x: utils.withGrid(4),
+        y: utils.withGrid(12.5),
       }),
-      lishou: new GameObject({
-        x: 15,
-        y: 12.5,
+      lishou: new Cat({
+        x: utils.withGrid(15),
+        y: utils.withGrid(12.5),
         src: "/images/characters/people/lishou.png",
       }),
     },
@@ -38,12 +39,12 @@ window.OverworldMaps = {
     lowerSrc: "/images/maps/KitchenLower.png",
     upperSrc: "/images/maps/KitchenUpper.png",
     gameObjects: {
-      npc1: new GameObject({
+      npc1: new Cat({
         x: 8,
         y: 12.5,
         src: "/images/characters/people/npc1.png",
       }),
-      npc2: new GameObject({
+      npc2: new Cat({
         x: 1,
         y: 12.5,
         src: "/images/characters/people/npc2.png",
